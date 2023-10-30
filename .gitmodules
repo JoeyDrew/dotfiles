@@ -1,0 +1,9 @@
+[submodule ".config/fish/fish-kube-prompt"]
+	path = .config/fish/fish-kube-prompt
+	url = https://github.com/aluxian/fish-kube-prompt
+[submodule ".config/nvim"]
+	path = .config/nvim
+	url = https://github.com/AstroNvim/AstroNvim
+[submodule ".config/kitty/kitty-themes"]
+	path = .config/kitty/kitty-themes
+	url = https://github.com/dexpota/kitty-themes.git
