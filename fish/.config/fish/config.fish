@@ -36,6 +36,10 @@ function al
     aws sso login --profile $argv
 end
 
+function lk
+  set loc (walk $argv); and cd $loc;
+end
+
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 starship init fish | source
