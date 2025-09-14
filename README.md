@@ -3,6 +3,8 @@
 
 depends on `stow`
 
+note: there are some compatibility issues between `fish` when installed via `brew` or otherwise.
+
 ### usage
 
 ```
