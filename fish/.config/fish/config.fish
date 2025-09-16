@@ -10,6 +10,8 @@ alias k kubectl
 alias awslogin "saml2aws login --skip-prompt --force"
 alias awsgovlogin "saml2aws -a gov-default login --skip-prompt --force"
 alias gs "git status"
+alias rm "gum confirm 'Remove these files?' && rm '$@'"
+
 
 function gb
     set -l branch_name $argv[1]
