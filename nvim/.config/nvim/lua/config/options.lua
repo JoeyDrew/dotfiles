@@ -16,5 +16,3 @@ opt.undofile = true           -- persistent undo
 opt.termguicolors = true      -- enable 24-bit RGB color in the TUI
 opt.timeoutlen = 500          -- shorten key timeout length a little bit for which-key
 opt.title = true              -- set terminal title to the filename and path
-opt.shiftround = true         -- round indentation with `>`/`<` to shiftwidth
-opt.shiftwidth = 0            -- number of space inserted for indentation; when zero the 'tabstop' value will be used
