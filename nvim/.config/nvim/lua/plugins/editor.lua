@@ -31,9 +31,13 @@ return {
     -- this is equivalent to setup({}) function
   },
   {
-    'ggandor/leap.nvim',
+    url = "https://codeberg.org/andyg/leap.nvim",
     config = function()
-      require('leap').set_default_mappings()
+      -- Default mappings: s = leap forward, S = leap backward (normal, visual, operator-pending)
+      -- gs = remote action (leap then operate from distance)
+      vim.keymap.set({ "n", "x", "o" }, "s",  function() require("leap").leap() end,              { desc = "Leap forward" })
+      vim.keymap.set({ "n", "x", "o" }, "S",  function() require("leap").leap({ backward = true }) end, { desc = "Leap backward" })
+      vim.keymap.set({ "n", "x", "o" }, "gs", function() require("leap.remote").action() end,     { desc = "Leap remote action" })
     end,
   },
 }
